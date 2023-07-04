@@ -1,0 +1,59 @@
+<!-- <p>search works!</p>
+
+<div>
+    <h1>view 1</h1>
+    <form [formGroup]="searchForm" (Submit)="search()">
+        <div>
+            <button type="submit">A</button>
+            <button type="submit">B</button>
+            <button type="submit">C</button>
+            <button type="submit">D</button>
+            <button type="submit">E</button>
+            <button type="submit">F</button>
+            <button type="submit">G</button>
+            <button type="submit">H</button>
+            <button type="submit">I</button>
+            <button type="submit">J</button>
+            <button type="submit">K</button>
+            <button type="submit">L</button>
+            <button type="submit">M</button>
+            <button type="submit">O</button>
+            <button type="submit">P</button>
+            <button type="submit">Q</button>
+            <button type="submit">R</button>
+            <button type="submit">S</button>
+            <button type="submit">T</button>
+            <button type="submit">U</button>
+            <button type="submit">V</button>
+            <button type="submit">W</button>
+            <button type="submit">X</button>
+            <button type="submit">Y</button>
+            <button type="submit">Z</button>
+        </div>
+        <div>
+            <button type="submit">0</button>
+            <button type="submit">1</button>
+            <button type="submit">2</button>
+            <button type="submit">3</button>
+            <button type="submit">4</button>
+            <button type="submit">5</button>
+            <button type="submit">6</button>
+            <button type="submit">7</button>
+            <button type="submit">8</button>
+            <button type="submit">9</button>
+        </div>
+    </form>
+</div> -->
+
+
+<div>
+    <h1>My BookStore</h1>
+    <form [formGroup]="searchForm" (ngSubmit)="search()">
+        <div>
+            <button *ngFor="let a of ALPHABETS" (click)="books(a)">{{a}}</button>
+        </div>
+        <div>
+            <button *ngFor="let num of NUMBERS" (click)="books(num)">{{num}}</button>
+        </div>
+    </form>
+</div>

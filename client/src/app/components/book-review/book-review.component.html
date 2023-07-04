@@ -1,0 +1,17 @@
+<p>book-review works!</p>
+
+<div>
+    <div>
+        <h1>View 4</h1>
+        {{reviewList.book_title}}
+        {{reviewList.book_author}}
+        {{reviewList.byline}}
+    </div>
+    <div>
+    <h2>{{reviewList.publication_dt}}</h2>
+    <p> by {{reviewList.summary}}</p>
+        <div>
+        <a routerLink="['/review/' + book.id + '/review']">Full Review</a>
+    </div>
+</div>
+</div>

@@ -1,0 +1,57 @@
+<p>book-details works!</p>
+
+
+<div>
+    <button type="button" routerLink="['/books']">Back</button>
+    <div>
+        <h1>View 4</h1>
+        {{bookList.author}}
+        {{bookList.rating}}
+        <h2>{{bookList.genres}}</h2>
+    </div>
+    <div>
+        {{bookList.title}}
+    <h3> by {{bookList.summary}}</h3>
+    <p>{{bookList.description}}</p>
+    <div>
+        <a routerLink="['/books/' + book.id + '/review']">Find Review</a>
+    </div>
+</div>
+
+</div>
+
+<!-- <div class="container mt-3">
+    <div class="row">
+      <h1 class="col">Search Result</h1>
+      <button
+        class="col-md-1 ms-auto btn btn-danger"
+        type="button"
+        [routerLink]="['/']"
+      >
+        Back
+      </button>
+    </div> -->
+  
+  
+        <!-- DATA
+        <div class="col-md-9">
+          <div class="row row-cols-lg-auto">
+            <a class="col-12" href="{{ review.url }}" target="_blank">
+              <h2>{{ review.book_title }}</h2>
+            </a>
+            <span class="col-12 my-auto badge text-bg-danger">{{ review.book_author }}</span>
+          </div>
+  
+          <h3 class="row">{{ review.byline }}</h3>
+          <h5 class="row">{{ review.summary }}</h5>
+          <button
+            class="row ms-auto btn btn-outline-primary"
+            type="button"
+            [routerLink]="['/comment']"
+            [queryParams]="{ title: review.book_title, searchTerm }"
+          >
+            Comment
+          </button>
+        </div>
+      </div> -->
+

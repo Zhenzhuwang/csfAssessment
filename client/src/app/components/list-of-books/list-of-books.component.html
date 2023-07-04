@@ -1,6 +1,6 @@
 <p>list-of-books works!</p>
 
- <div>
+ <!-- <div>
     <button type="button" [routerLink]="['/']">Home</button>
     <h1>View 2</h1>
     <table>
@@ -16,5 +16,23 @@
     </table>
     <button type="button" (click)="previous()">Previous</button>
     <button type="button" (click)="next()">Next</button>
-</div>
-    
+</div> -->
+
+<div>
+    <button type="button" [routerLink]="['/']">Home</button>
+    <h1>View 2</h1>
+    <table>
+      <tbody>
+        <tr *ngFor="let book of bookList">
+          <td class="">
+            <a [routerLink]="['/books', book.book_id]">
+              <h2>{{ book.title }}</h2>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button type="button" (click)="previous()">Previous</button>
+    <button type="button" (click)="next()">Next</button>
+  </div>
+  

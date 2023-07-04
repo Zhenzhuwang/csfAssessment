@@ -1,7 +1,7 @@
 <p>book-details works!</p>
 
 
-<div>
+<!-- <div>
     <button type="button" routerLink="['/books']">Back</button>
     <div>
         <h1>View 4</h1>
@@ -18,7 +18,27 @@
     </div>
 </div>
 
+</div> -->
+
+<div>
+  <button type="button" routerLink="/books">Back</button>
+  <div>
+    <h1>View 4</h1>
+    <span>{{ book?.title }}</span>
+    <span>{{ book?.rating }}</span>
+    <h2>{{ book?.genres }}</h2>
+  </div>
+  <div>
+    <h2>{{ book?.title }}</h2>
+    <h3>by {{ book?.authors }}</h3>
+    <p>{{ book?.description }}</p>
+    <div>
+      <a *ngFor="let review of reviewList" [href]="review.url" target="_blank">{{ review.byline }}</a>
+    </div>
+  </div>
 </div>
+
+
 
 <!-- <div class="container mt-3">
     <div class="row">

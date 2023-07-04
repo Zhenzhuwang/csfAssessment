@@ -46,7 +46,7 @@
 </div> -->
 
 
-<div>
+<!-- <div>
     <h1>My BookStore</h1>
     <form [formGroup]="searchForm" (ngSubmit)="search()">
         <div>
@@ -56,4 +56,17 @@
             <button *ngFor="let num of NUMBERS" (click)="books(num)">{{num}}</button>
         </div>
     </form>
-</div>
+</div> -->
+
+<div>
+    <h1>My BookStore</h1>
+    <form [formGroup]="searchForm" (ngSubmit)="search()">
+      <div>
+        <button *ngFor="let a of ALPHABETS" type="button" (click)="books(a)">{{ a }}</button>
+      </div>
+      <div>
+        <button *ngFor="let num of NUMBERS" type="button" (click)="books(num)">{{ num }}</button>
+      </div>
+    </form>
+  </div>
+  

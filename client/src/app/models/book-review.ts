@@ -5,4 +5,5 @@ export interface BookReview {
     summary: string
     publication_dt:string
     url:string
+    book_id:string
 }

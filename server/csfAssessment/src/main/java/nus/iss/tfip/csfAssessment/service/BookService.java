@@ -84,11 +84,6 @@ private BookChar reviewMarshalling(JsonObject jObj){
     BookChar r = new BookChar();
     r.setTitle(jObj.getString("book_title"));
     r.setAuthors(jObj.getString("book_author"));
-    r.setByline(jObj.getString("byline"));
-    r.setSummary(jObj.getString("summary"));
-    r.setPublication_dt(jObj.getString("publication_dt"));
-    r.setUrl(jObj.getString("url"));
-    r.setIsbn13(jObj.getInt(null));
     return r;
 }
 

@@ -33,11 +33,11 @@ export class BookReviewComponent implements OnInit, OnDestroy{
       }
     )
     
-    await this.springboot.search(this.searchTerm)
-      .then(response => {
-        this.reviewList = response
-        console.debug(response)
-      })
+    // await this.springboot.search(this.searchTerm)
+    //   .then(response => {
+    //     this.reviewList = response
+    //     console.debug(response)
+    //   })
   }
 
 }

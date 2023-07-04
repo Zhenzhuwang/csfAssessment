@@ -1,6 +1,6 @@
 <p>book-review works!</p>
 
-<div>
+<!-- <div>
     <div>
         <h1>View 4</h1>
         {{reviewList.book_title}}
@@ -14,4 +14,25 @@
         <a routerLink="['/review/' + book.id + '/review']">Full Review</a>
     </div>
 </div>
-</div>
+</div> -->
+
+<div>
+    <div>
+      <h1>View 4</h1>
+      <div *ngFor="let review of reviewList">
+        <h2>{{ review.book_title }}</h2>
+        <h3>{{ review.book_author }}</h3>
+        <p>By: {{ review.byline }}</p>
+      </div>
+    </div>
+    <div>
+      <div *ngFor="let review of reviewList">
+        <h2>{{ review.publication_dt }}</h2>
+        <p>{{ review.summary }}</p>
+        <div>
+          <a [routerLink]="['/review', review.book_id, 'review']">Full Review</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  

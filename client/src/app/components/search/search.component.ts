@@ -36,10 +36,10 @@ export class SearchComponent {
   search() {
     const bookTitle = this.searchForm.value['bookTitle']
     //console.error(searchTerm)
-    this.router.navigate(['/books',{
+    this.router.navigate(['/books'],{
       queryParams: {query: bookTitle}
     }
-  ])
+  )
   }
 
   books(value: string){
@@ -47,5 +47,4 @@ export class SearchComponent {
   // this.springBoot.getBookList(value);
   this.router.navigate(['/books']);
   }
-
 }
